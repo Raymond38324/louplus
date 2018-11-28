@@ -25,8 +25,8 @@ def co2_gdp_plot():
     fig.set_title("GDP-CO2")
     plt.xticks(num,['CHN', 'USA', 'GBR', 'FRA','RUS'], rotation=90)
     plt.show()
-    c=format(co2_1['CHN'],'.3f')
-    g=format(gdp_1['CHN'],'.3f')
+    c=float(format(co2_1['CHN'],'.3f'))
+    g=float(format(gdp_1['CHN'],'.3f'))
     china = [c,g]
     return fig,china
 
